@@ -9,7 +9,7 @@ The basic building blocks of Category Theory are Objects and Morphisms (also cal
 
 ### Morphisms
 
-Morphisms are a relationship between Objects, it can be a mapping like a function but it does not have to be. A counter example is `>=` which also can be a valid Morphism (in a specific category).
+Morphisms are a relationship between Objects, it can be a mapping like a function but it does not have to be. A counter example is `>=` which is a valid Morphism (in some categories).
 
 Morphisms are also sometimes called arrows and are also written like a arrow `->`. This is probably where the lambda arrow comes from in languages like java and javascript.
 
