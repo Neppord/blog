@@ -25,7 +25,7 @@ For something to count as a Category it needs to follow these simple rules.
 
 ### Composition
 
-If you have to Morphisms that share a common Object, one that is the endpoint of one and start of the other then there must be one (or possible to create one) that is the composition of both.
+If you have two Morphisms that share a common Object, one that is the endpoint of one and start of the other then there must be one (or possible to create one) that is the composition of them.
 
 `A->B->C` there must be one `A->C`.
 
