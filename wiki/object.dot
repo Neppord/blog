@@ -1,0 +1,6 @@
+digraph G {
+    stylesheet = "ct.css"
+    node [style=filled fillcolor=white]
+    A [color=red]
+    A -> A
+}

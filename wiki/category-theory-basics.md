@@ -15,6 +15,8 @@ Morphisms are also sometimes called arrows and are also written like a arrow `->
 
 ### Objects
 
+![object](object.svg)
+
 Serves as the end and starting points of Morphisms and are quite uninteresting in them selves. Usually a Object serves as a container for multiple value with in a specific classification but can also be concrete and mean a specific value.
 
 Objects are written like a circle or a dot like this `.`.
