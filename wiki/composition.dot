@@ -1,0 +1,7 @@
+digraph G {
+    stylesheet = "ct.css"
+    node [style=filled fillcolor=white]
+    A -> B [label=h]
+    B -> C [constraint=false label=g]
+    A -> C [color=red label="g.h"]
+}
