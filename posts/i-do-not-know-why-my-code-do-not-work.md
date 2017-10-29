@@ -16,9 +16,9 @@ One last note, save and make versions often. You will se that it also helps you 
 
 Now that we have our safety belt ready (git or version folders) we can start to make changes.
 
-First change is the structure of your code differently. There are a lot of fancy words for this technique and it can be done with more or less precision and granularity. These techniques are commonly referred to as principals and or design patterns. As with git this is a huge subject and I will only give you tha most basic introduction. If you would like to read more about this look up `Law of Demeter`, `the SOLID pricipals`, and `Ports and Adapters` where the later is the pattern I'll introduce a lite version for you today.
+The first change we will make is to how we the structure of your code. There are a lot of fancy words for this technique and it can be done with more or less precision and granularity. These techniques are commonly referred to as principals and or design patterns. As with git this is a huge subject and I will only give you tha most basic introduction. If you would like to read more about this, look up `Law of Demeter`, `the SOLID pricipals`, and `Ports and Adapters` where the later is the pattern I'll introduce to you, though its a very shortened version of it.
 
-Many of these patterns are imposed on you if you write in strict functional languages like Haskell.
+Many of these patterns are imposed on you if you write in strict functional languages like Haskell. So learning new languages usually teach you new ways of ordering problems and code. 
 
 The gist of `Ports and Adapters` is to separate the core logic of your program from the rest of the world. The more descriptive way of saying this is:
 
@@ -69,7 +69,7 @@ if __name__ == "__main__":
 
 If this was a bigger program I would move the functions into separate files.
 
-Some interesting things happens when you do this. We get a place to name the logic `complimenting_age`. The code in the function is easier to reason about and to show to others. The code in the main if statement also change into something different. It looks more like a table of contents, a list of what to be done.
+Some interesting things happens when you do this. We get a place to name the logic `complimenting_age`. The code in the function is easier to reason about and easier to show to others. The code in the main if statement also change into something different. It looks more like a table of contents, a list of what to be done.
 
 ## Lesson 3: Writing tests
 
