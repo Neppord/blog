@@ -6,9 +6,9 @@ In this blog post I'll try to introduce some of the concepts and give some quick
 
 ## Lesson 1: Version Control
 
-Version control is a simple concept. It is like the super version of `ctrl + z`. If you haven't learnt [git](https://git-scm.com/) yet or any other version control tool i highly recommend it. That is how ever a bit to much to go through for to day.
+Version control is a simple concept. It is like the super version of `ctrl + z`. If you haven't learnt [git](https://git-scm.com/) yet or any other version control tool I highly recommend it. That is how ever a bit to much to go through for to day.
  
-So what is the _now_ option? Folders. When you are trying to fix your programming assignment (due tomorrow) or fixing performance issues in you hobby project. Copy the source folder and give it a name like `2017-10-19-21:34-working-asssignment-3-done` or `2017-10-20-23:56-broken-fiddeling-with-padding`. This will help you greatly in being able to take large (uncomfortable) steps without loosing working versions. So now you can always revert your work to a known working state and also answer "when did i change this?".
+So what is the _now_ option? Folders. When you are trying to fix your programming assignment (due tomorrow) or fixing performance issues in you hobby project. Copy the source folder and give it a name like `2017-10-19-21:34-working-asssignment-3-done` or `2017-10-20-23:56-broken-fiddeling-with-padding`. This will help you greatly in being able to take large (uncomfortable) steps without loosing working versions. So now you can always revert your work to a known working state and also answer "when did I change this?".
 
 one last note, save and make versions often.
 
@@ -16,7 +16,7 @@ one last note, save and make versions often.
 
 Now that we have our safety belt ready (git or version folders) we can start to make changes.
 
-First change is the structure of your code differently. There are a lot of fancy words for this technique and it can be done with more or less precision and granularity. These techniques are commonly referred to as principals and or design patterns. As with git this is a huge subject and i will only give you tha most basic introduction. If you would like to read more about this look up `Law of Demeter`, `the SOLID pricipals`, and `Ports and Adapters` where the later is the pattern I'll introduce a lite version for you today.
+First change is the structure of your code differently. There are a lot of fancy words for this technique and it can be done with more or less precision and granularity. These techniques are commonly referred to as principals and or design patterns. As with git this is a huge subject and I will only give you tha most basic introduction. If you would like to read more about this look up `Law of Demeter`, `the SOLID pricipals`, and `Ports and Adapters` where the later is the pattern I'll introduce a lite version for you today.
 
 Many of these patterns are imposed on you if you write in strict functional languages like Haskell.
 
@@ -32,10 +32,10 @@ if age > 25:
     age -= 5
 else:
     age += 5
-print("Oh! i thought you where", age, "old!")
+print("Oh! I thought you where", age, "old!")
 ```
 
-This is one of the first programs i built around `1995`, then it was written in BASIC and not python, ah the memories.
+This is one of the first programs I built around `1995`, then it was written in BASIC and not python, ah the memories.
 
 First make sure that we can import this file without running the program:
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
         age -= 5
     else:
         age += 5
-    print("Oh! i thought you where", age, "old!")
+    print("Oh! I thought you where", age, "old!")
 ```
 
 Then lets extract every thing that is pure (that does not ask the user  or write anything) logic.
@@ -64,7 +64,7 @@ if __name__ == "__main__":
     raw_age = input("what is your age?")
     age = int(raw_age)
     age = complimenting_age(age)
-    print("Oh! i thought you where", age, "old!")
+    print("Oh! I thought you where", age, "old!")
 ```
 
 If this was a bigger program I would move the functions into separate files.
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     raw_age = input("what is your age?")
     age = int(raw_age)
     age = complimenting_age(age)
-    print("Oh! i thought you where", age, "old!")
+    print("Oh! I thought you where", age, "old!")
 #test.py
 #import program
 
@@ -118,7 +118,7 @@ If you would run this file you would not need to run through the whole program t
 
 There are of course tools for this that make things easier, especially when you have more then one function to test. 
 
-My favorite two tools for this is doctest and py.test. I'll show you doctest and i recommend you to look at py.test when you have the time.
+My favorite two tools for this is doctest and py.test. I'll show you doctest and I recommend you to look at py.test when you have the time.
 
 ### Doctest
 
@@ -144,7 +144,7 @@ if __name__ == "__main__":
     raw_age = input("what is your age?")
     age = int(raw_age)
     age = complimenting_age(age)
-    print("Oh! i thought you where", age, "old!")
+    print("Oh! I thought you where", age, "old!")
 ```
 
 And then run the doctest module on the file `python -m doctest program.py`. This would be the output:
@@ -187,7 +187,7 @@ if __name__ == "__main__":
     raw_age = input("what is your age?")
     age = int(raw_age)
     age = complimenting_age(age)
-    print("Oh! i thought you where", age, "old!")
+    print("Oh! I thought you where", age, "old!")
 ```
 
 Running the doctest does not give any output, so that is good! Let us add a `-v` flag to get a bit more verbose output.
@@ -243,7 +243,7 @@ if __name__ == "__main__":
     raw_age = input("what is your age?")
     age = int(raw_age)
     age = complimenting_age(age)
-    print("Oh! i thought you where", age, "old!")
+    print("Oh! I thought you where", age, "old!")
 ```
 
 Run the test and make sure they pass. For a small change like this we would not have bothered to start the application and test all the ages. But now that testing is almost free we can do it all the time.
@@ -269,7 +269,7 @@ if __name__ == "__main__":
     raw_age = input("what is your age?")
     int_age = int(raw_age)
     new_age = complimenting_age(int_age)
-    print("Oh! i thought you where", new_age, "old!")
+    print("Oh! I thought you where", new_age, "old!")
 ```
 
 I'm quite happy with that.
