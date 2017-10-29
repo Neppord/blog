@@ -86,9 +86,9 @@ Why do a guess these things? Cause I have done them, and I still do sometimes.
 
 Testing in essence is to automate these processes and make it both quicker and more reliable. To make sure that what you believe work does work, and what you believe does not work does not work.
 
-What a test is is a version of your program testing a part or parts of your library. There are also tests that tests the whole program as is but generally this is more costly then the benefit of the feedback you get.
+What a test is is a version of your program, testing a part or parts of your library. There are also tests that tests the whole program as is but generally this is more costly then the benefit of the feedback you get.
 
-The absolute simplest way to test the example program we have would be to write a new file `tests.py` that imports the  `program.py` file with the code we rewrote in [Lesson 2].
+The absolute simplest way to test the example program we have would be to write a new file `tests.py` that imports the  `program.py` file with the code we rewrote in [Lesson 2](#lesson-2:-library-and-program.).
 
 ```python
 # program.py
@@ -118,11 +118,11 @@ If you would run this file you would not need to run through the whole program t
 
 There are of course tools for this that make things easier, especially when you have more then one function to test. 
 
-My favorite two tools for this is doctest and py.test. I'll show you doctest and I recommend you to look at py.test when you have the time.
+My favorite two tools for this is doctest and py.test. I'll show you doctest, since it is part of a normal python installation. But I recommend you to look at py.test when you have the time.
 
 ### Doctest
 
-Using doctest is super easy if you already followed [Lesson 2]. The only thing you have to do is add a example in the doc-string of the function you want to test
+Using doctest is super easy if you already followed [Lesson 2](#lesson-2:-library-and-program.). The only thing you have to do is add a example in the doc-string of the function you want to test
 
 ```python
 def complimenting_age(age):
@@ -220,7 +220,7 @@ Test passed.
 
 Seams like everything works so lets save it (using git or folders). Now we can clean up the mess we made.
 
-lets add a blank line between the function and the if statement, this is mandatory acording to [pep8](https://www.python.org/dev/peps/pep-0008/)
+let us add a blank line between the function and the if statement, this is mandatory according to [pep8](https://www.python.org/dev/peps/pep-0008/)
 
 ```python
 def complimenting_age(age):
@@ -247,6 +247,8 @@ if __name__ == "__main__":
 ```
 
 Run the test and make sure they pass. For a small change like this we would not have bothered to start the application and test all the ages. But now that testing is almost free we can do it all the time.
+
+### Refactor
 
 let us remove mutation. In programming state is your enemy, if you can do something without mutating or share state then its almost always better.
 ```python
