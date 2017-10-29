@@ -1,6 +1,6 @@
 # I do not know why my code do not work
 
-This is a common feeling and a common issue both for beginners and professionals. The difference is that most professionals have learnt from there mistakes (that you are making right now) and are using tools and habits to help them.
+This is a common feeling and a common issue both for beginners and professionals. The difference is that most professionals have learnt from there mistakes (the ones you are making right now) and are using tools and habits to help them.
 
 In this blog post I'll try to introduce some of the concepts and give some quick fixes to help you with the problem at hand.
 
