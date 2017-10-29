@@ -6,11 +6,11 @@ In this blog post I'll try to introduce some of the concepts and give some quick
 
 ## Lesson 1: Version Control
 
-Version control is a simple concept. It is like the super version of `ctrl + z`. If you haven't learnt [git](https://git-scm.com/) yet or any other version control tool I highly recommend it. That is how ever a bit to much to go through for to day.
+Version control is a simple concept. It is like the super version of `ctrl + z`. If you haven't learnt [git](https://git-scm.com/) yet or any other version control tool I highly recommend it. That is however a bit to much to go through for to day.
  
 So what is the _now_ option? Folders. When you are trying to fix your programming assignment (due tomorrow) or fixing performance issues in you hobby project. Copy the source folder and give it a name like `2017-10-19-21:34-working-asssignment-3-done` or `2017-10-20-23:56-broken-fiddeling-with-padding`. This will help you greatly in being able to take large (uncomfortable) steps without loosing working versions. So now you can always revert your work to a known working state and also answer "when did I change this?".
 
-one last note, save and make versions often.
+One last note, save and make versions often. You will se that it also helps you think about your changes and why you do them.
 
 ## Lesson 2: Library and Program.
 
