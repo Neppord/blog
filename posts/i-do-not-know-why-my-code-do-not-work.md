@@ -2,13 +2,13 @@
 
 This is a common feeling and a common issue both for beginners and professionals. The difference is that most professionals have learnt from there mistakes (the ones you are making right now) and are using tools and habits to help them.
 
-In this blog post I'll try to introduce some of the concepts and give some quick fixes to help you with the problem at hand.
+In this blog post I'll try to introduce some concepts and give some quick fixes to help you with the problem at hand.
 
 ## Lesson 1: Version Control
 
-Version control is a simple concept. It is like the super version of `ctrl + z`. If you haven't learnt [git](https://git-scm.com/) yet or any other version control tool I highly recommend it. That is however a bit to much to go through for to day.
+Version control is a simple concept. It is like the super version of `ctrl + z`. If you haven't learnt [git](https://git-scm.com/) yet or any other version control tool I highly recommend it. That is however a bit too much to go through for to day.
  
-So what is the _now_ option? Folders. When you are trying to fix your programming assignment (due tomorrow) or fixing performance issues in you hobby project. Copy the source folder and give it a name like `2017-10-19-21:34-working-asssignment-3-done` or `2017-10-20-23:56-broken-fiddeling-with-padding`. This will help you greatly in being able to take large (uncomfortable) steps without loosing working versions. So now you can always revert your work to a known working state and also answer "when did I change this?".
+So what is the _now_ option? Folders. When you are trying to fix your programming assignment (due tomorrow) or fixing performance issues in your hobby project. Copy the source folder and give it a name like `2017-10-19-21:34-working-asssignment-3-done` or `2017-10-20-23:56-broken-fiddeling-with-padding`. This will help you greatly in being able to take large (uncomfortable) steps without loosing working versions. So now you can always revert your work to a known working state and answer "when did I change this?".
 
 One last note, save and make versions often. You will se that it also helps you think about your changes and why you do them.
 
@@ -16,7 +16,7 @@ One last note, save and make versions often. You will se that it also helps you 
 
 Now that we have our safety belt ready (git or version folders) we can start to make changes.
 
-The first change we will make is to how we the structure of your code. There are a lot of fancy words for this technique and it can be done with more or less precision and granularity. These techniques are commonly referred to as principals and or design patterns. As with git this is a huge subject and I will only give you tha most basic introduction. If you would like to read more about this, look up `Law of Demeter`, `the SOLID pricipals`, and `Ports and Adapters` where the later is the pattern I'll introduce to you, though its a very shortened version of it.
+The first change we will make is to how we the structure of your code. There are a lot of fancy words for this technique, and it can be done with more or less precision and granularity. These techniques are commonly referred to as principals and or design patterns. As with git this is a huge subject, and I will only give you tha most basic introduction. If you would like to read more about this, look up `Law of Demeter`, `the SOLID pricipals`, and `Ports and Adapters` where the later is the pattern I'll introduce to you, though a shortened version of it.
 
 Many of these patterns are imposed on you if you write in strict functional languages like Haskell. So learning new languages usually teach you new ways of ordering problems and code. 
 
@@ -37,7 +37,7 @@ print("Oh! I thought you where", age, "old!")
 
 This is one of the first programs I built around `1995`, then it was written in BASIC and not python, ah the memories.
 
-First make sure that we can import this file without running the program:
+First make sure we can import this file without running the program:
 
 ```python
 if __name__ == "__main__":
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     print("Oh! I thought you where", age, "old!")
 ```
 
-Then lets extract every thing that is pure (that does not ask the user  or write anything) logic.
+Then lets extract every thing that is pure (that does not ask the user or write anything) logic.
 
 ```python
 def complimenting_age(age):
@@ -86,7 +86,7 @@ Why do a guess these things? Cause I have done them, and I still do sometimes.
 
 Testing in essence is to automate these processes and make it both quicker and more reliable. To make sure that what you believe work does work, and what you believe does not work does not work.
 
-What a test is is a version of your program, testing a part or parts of your library. There are also tests that tests the whole program as is but generally this is more costly then the benefit of the feedback you get.
+A test is a version of your program that is testing a part or parts of your library. There are also tests that tests the whole program as is but generally this is more costly and don't give you as good feedback.
 
 The absolute simplest way to test the example program we have would be to write a new file `tests.py` that imports the  `program.py` file with the code we rewrote in [Lesson 2](#lesson-2:-library-and-program.).
 
@@ -116,9 +116,9 @@ assert complimenting_age(26) == 21
 
 If you would run this file you would not need to run through the whole program to find out that the program do not handle age `25` correctly. What we wanted was that it prompts `20` but it will prompt `30`.
 
-There are of course tools for this that make things easier, especially when you have more then one function to test. 
+There are of course tools for this that make things easier, especially when you have more than one function to test. 
 
-My favorite two tools for this is doctest and py.test. I'll show you doctest, since it is part of a normal python installation. But I recommend you to look at py.test when you have the time.
+My favorite two tools for this is doctest and py.test. I'll show you doctest, since it is part of a normal python installation. I recommend you to look at py.test when you have the time.
 
 ### Doctest
 
@@ -165,7 +165,7 @@ Got:
 
 ## Lesson 4: Fix it then Refactor
 
-So lets fix the code by changing `>` to `>=`:
+So let's fix the code by changing `>` to `>=`:
 
 ```python
 def complimenting_age(age):
@@ -218,7 +218,7 @@ ok
 Test passed.
 ```
 
-Seams like everything works so lets save it (using git or folders). Now we can clean up the mess we made.
+Seams like everything works so let's save it (using git or folders). Now we can clean up the mess we made.
 
 let us add a blank line between the function and the if statement, this is mandatory according to [pep8](https://www.python.org/dev/peps/pep-0008/)
 
@@ -280,4 +280,4 @@ I'm quite happy with that.
 
 You can find me on twitter [@neppord](https://twitter.com/neppord) and [youtube](https://www.youtube.com/channel/UCgWtfN4QMkZq_zizqQh9dfw).
 
-Please say hi! and tell me if this was useful / entertaining. I have some other lessons on the subject that did not fit into this blog post about type hints and debugging. Let me know it it sounds interesting.
+Please say hi! and tell me if this was useful / entertaining. I have some other lessons on the subject that did not fit into this blog post about type hints and debugging. Let me know if it sounds interesting.
